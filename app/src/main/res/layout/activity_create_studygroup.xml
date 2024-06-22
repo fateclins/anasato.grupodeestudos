@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F8F5"
+    android:paddingBottom="0dp"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="-98dp"
+        android:fontFamily="@font/lexend_bold"
+        android:gravity="center"
+        android:text="criar grupo de estudos"
+        android:textSize="24sp" />
+
+    <GridLayout
+        android:id="@+id/grid_materias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginTop="130dp"
+
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:rowCount="4"
+        android:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/btnLogica"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1"
+            android:backgroundTint="#F9F8F5"
+            android:text="Lógica"
+            android:textColor="#000"
+            app:strokeColor="#000"
+            app:strokeWidth="2sp" />
+
+        <Button
+            android:id="@+id/btnMatematica"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#F9F8F5"
+            android:text="Matemática"
+            android:textColor="#000"
+            app:strokeColor="#000"
+            app:strokeWidth="2sp" />
+
+        <Button
+            android:id="@+id/btnBancoDeDados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1"
+            android:backgroundTint="#F9F8F5"
+            android:text="Banco de Dados"
+            android:textColor="#000"
+            app:strokeColor="#000"
+            app:strokeWidth="2sp" />
+
+        <Button
+            android:id="@+id/btnFrontEnd"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#F9F8F5"
+            android:text="FrontEnd"
+            android:textColor="#000"
+            app:strokeColor="#000"
+            app:strokeWidth="2sp" />
+
+        <Button
+            android:id="@+id/btnBackEnd"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1"
+            android:backgroundTint="#F9F8F5"
+            android:text="BackEnd"
+            android:textColor="#000"
+            app:strokeColor="#000"
+            app:strokeWidth="2sp" />
+
+        <Button
+            android:id="@+id/btnEngenharia"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#F9F8F5"
+            android:text="Engenharia"
+            android:textColor="#000"
+            app:strokeColor="#000"
+            app:strokeWidth="2sp" />
+
+        <Button
+            android:id="@+id/btnDesign"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1"
+            android:backgroundTint="#F9F8F5"
+            android:text="Design"
+            android:textColor="#000"
+            app:strokeColor="#000"
+            app:strokeWidth="2sp" />
+
+        <Button
+            android:id="@+id/btnTcc"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#F9F8F5"
+            android:text="TCC"
+            android:textColor="#000"
+            app:strokeColor="#000"
+            app:strokeWidth="2sp" />
+
+    </GridLayout>
+
+
+    <EditText
+        android:id="@+id/inputData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grid_materias"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Data:"
+        android:inputType="datetime"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/inputHorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputData"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="Horário:"
+        android:inputType="time"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnRegisterStudyGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_below="@+id/inputHorario"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginTop="57dp"
+        android:backgroundTint="#F9F8F5"
+        android:fontFamily="@font/lexend_bold"
+        android:gravity="center"
+        android:text="vamos lá"
+        android:textColor="#000"
+        android:textColorLink="#F9F8F5"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#000"
+        app:strokeWidth="2dp" />
+
+
+</RelativeLayout>

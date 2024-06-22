@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F8F5"
+    android:paddingBottom="0dp"
+    android:padding="16dp">
+
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/lexend_bold"
+        android:text="Fulano, bora estudar?"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/subtexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/lexend"
+        android:text="assuntos em alta :)"
+        android:textSize="20sp" />
+
+    <GridLayout
+        android:id="@+id/grid_materias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subtexto"
+        android:layout_marginTop="8dp"
+        android:rowCount="4"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:useDefaultMargins="true"
+        android:columnCount="2">
+
+        <Button
+            android:id="@+id/btnLogica"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1"
+            android:backgroundTint="#F9F8F5"
+            android:text="Lógica"
+            android:textColor="#000"
+            app:strokeColor="#000"
+            app:strokeWidth="2sp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <Button
+            android:id="@+id/btnMatematica"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#F9F8F5"
+            android:text="Matemática"
+            android:textColor="#000"
+            app:strokeColor="#000"
+            app:strokeWidth="2sp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <Button
+            android:id="@+id/btnBancoDeDados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_rowSpan="1"
+            android:backgroundTint="#F9F8F5"
+            android:text="Banco de Dados"
+            android:textColor="#000"
+            app:strokeColor="#000"
+            app:strokeWidth="2sp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <Button
+            android:id="@+id/btnFrontEnd"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#F9F8F5"
+            android:text="FrontEnd"
+            android:textColor="#000"
+            app:strokeColor="#000"
+            app:strokeWidth="2sp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <Button
+            android:id="@+id/btnBackEnd"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1"
+            android:backgroundTint="#F9F8F5"
+            android:text="BackEnd"
+            android:textColor="#000"
+            app:strokeColor="#000"
+            app:strokeWidth="2sp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <Button
+            android:id="@+id/btnEngenharia"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#F9F8F5"
+            android:text="Engenharia"
+            android:textColor="#000"
+            app:strokeColor="#000"
+            app:strokeWidth="2sp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <Button
+            android:id="@+id/btnDesign"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1"
+            android:backgroundTint="#F9F8F5"
+            android:text="Design"
+            android:textColor="#000"
+            app:strokeColor="#000"
+            app:strokeWidth="2sp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <Button
+            android:id="@+id/btnTcc"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#F9F8F5"
+            android:text="TCC"
+            android:textColor="#000"
+            app:strokeColor="#000"
+            app:strokeWidth="2sp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </GridLayout>
+
+
+    <TextView
+        android:id="@+id/simple_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grid_materias"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/lexend"
+        android:text="o que tá rolando:"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="52dp"
+        android:layout_height="57dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        app:srcCompat="@drawable/reading" />
+
+
+</RelativeLayout>

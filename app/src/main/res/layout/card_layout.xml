@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:elevation="8dp"
+    android:radius="16dp">
+
+    <LinearLayout
+        android:layout_width="295dp"
+        android:layout_height="282dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Título"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="data: 18/06/2024"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="horário: 14:00"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/textLocal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Biblioteca- bloco 3"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#000"
+            android:fontFamily="@font/lexend_bold"
+            android:text="Ação"
+            android:padding="18dp"
+            android:textColor="#FFF"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
